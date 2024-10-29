@@ -41,7 +41,6 @@ def log_blocked_ip(conn: sqlite3.Connection, ip: str, reason: str):
             VALUES (?, ?)
         ''', (ip, reason))
         conn.commit()
-        logging.info(f"Logged blocked IP: {ip} | Reason: {reason}")
     except sqlite3.Error as e:
         logging.error(f"Error logging blocked IP: {e}")
         raise
