@@ -1,0 +1,146 @@
+#######################################
+# Python Bytecode
+# Exclude byte-compiled files and optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#######################################
+# Environment Files
+# Exclude environment-specific configuration and secrets
+.env
+outline.yaml
+pytmbot.yaml
+
+#######################################
+# C Extensions
+# Exclude C extensions
+*.so
+
+#######################################
+# Distribution and Packaging
+# Exclude distribution, packaging, and build files
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+#######################################
+# PyInstaller
+# Exclude PyInstaller-related files
+*.manifest
+*.spec
+
+#######################################
+# Installer Logs
+# Exclude pip installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+#######################################
+# Unit Test and Coverage Reports
+# Exclude unit test and coverage report files
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+#######################################
+# Translations
+# Exclude translation files
+*.mo
+*.pot
+
+#######################################
+# Django Specific
+# Exclude Django specific files and settings
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+#######################################
+# Flask Specific
+# Exclude Flask specific cache
+.webassets-cache
+
+#######################################
+# Scrapy Specific
+# Exclude Scrapy specific files
+.scrapy
+
+#######################################
+# Documentation
+# Exclude Sphinx and MkDocs build directories
+docs/_build/
+site/
+
+#######################################
+# PyBuilder
+# Exclude PyBuilder specific files
+.pybuilder/
+target/
+
+#######################################
+# Jupyter and IPython
+# Exclude Jupyter and IPython configuration and checkpoint files
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+#######################################
+# Python Environment Managers
+# Exclude environment manager files
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pdm.toml
+__pypackages__/
+
+#######################################
+# IDE and Editor Configurations
+# Exclude IDE-specific project files and settings
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+#######################################
+# Type Checkers
+# Exclude type checker files
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+#######################################
+# Cython Debug Symbols
+# Exclude Cython debug symbols
+cython_debug/
