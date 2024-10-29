@@ -5,7 +5,7 @@ import argparse
 from collections import defaultdict, Counter
 from typing import List, Dict, Any
 import ipaddress
-import db_handler
+from nginxparser import db_handler
 from logger import logging
 import patterns
 
