@@ -116,7 +116,6 @@ def block_ips(firewall_rules: List[Dict[str, str]], conn: db_handler.sqlite3.Con
         try:
             command = ["ufw", "deny", "from", ip, "to", "any", "comment", f"Blocked due to {reason}"]
             subprocess.run(command, check=True)
-            logging.info(f"Blocked IP: {ip} | Reason: {reason}")
             db_handler.log_blocked_ip(conn, ip, reason)
         except subprocess.CalledProcessError as e:
             logging.error(f"Failed to block IP {ip}: {e}")
