@@ -168,7 +168,7 @@ def main():
         analysis_results = analyze_logs(log_lines)
 
         # Set up database
-        conn = db_handler.setup_database(args.db)
+        conn = db_handler.setup_database("blocked_ips.db")
 
         if args.info:
             # Display analysis information only
