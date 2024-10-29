@@ -44,6 +44,8 @@ python main.py --path <path_to_nginx_log> --info
 - `--report`: Generate a report of blocked IPs by reason.
 - `--test-format`: Test the format of the last two log entries.
 
+Sample output can be found in the [sample_output.md](docs/sample_output.md) file.
+
 ### Example:
 
 ```bash
