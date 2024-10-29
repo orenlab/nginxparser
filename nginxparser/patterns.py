@@ -15,5 +15,11 @@ danger_patterns = {
     "PHP Access": (r"\.php\b", "High"),
     "Python Access": (r"\.py\b", "High"),
     "Directory Access": (r"/(\.\.|/\\)", "High"),
-    "Empty Request": (r"^\s*$", "Low")
+    "Empty Request": (r"^\s*$", "Low"),
+    "Invalid SSL Handshake": (r"\\x16\\x03\\x01", "Medium"),
+    "Empty User-Agent": (r'"-" "-"$', "Low"),
+    "Unusual Method": (r"(PRI \*|SSTP_DUPLEX_POST)", "Medium"),
+    "Miner Requests": (r"\b(mining\.\w+|eth_submitLogin|XMRig)\b", "High"),
+    "Unusual Encoding": (r"%2e%2e|%2e|%25|%00", "Medium"),
+    "Potential Scanner": (r"(zgrab|Keydrop|Go|curl|wget|Hello World|CensysInspect)", "Medium")
 }
